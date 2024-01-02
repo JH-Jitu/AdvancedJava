@@ -46,12 +46,12 @@ public class AdminEntityService {
             adminEntityRepository.createAdminEntity(adminEntity);
 
             // Create a corresponding user with admin's email and role="admin"
-            UsersEntity adminUser = new UsersEntity();
-            adminUser.setEmail(adminEntity.getEmail());
-            adminUser.setRole("admin");
-//            System.out.println(adminUser);
-//            usersService.createUser(adminUser);
-            usersRepository.save(adminUser);
+//            UsersEntity adminUser = new UsersEntity();
+//            adminUser.setEmail(adminEntity.getEmail());
+//            adminUser.setRole("admin");
+////            System.out.println(adminUser);
+////            usersService.createUser(adminUser);
+//            usersRepository.save(adminUser);
             return ResponseEntity.status(HttpStatus.OK).body("Admin created successfully");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create admin");

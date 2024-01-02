@@ -29,11 +29,11 @@ public class RecruiterEntity {
     @Column
     private String photo;
 
-   
+
     @Column
     String expertiseSkills;
 
-   
+
     @Column
     private String projectLinks;
 
